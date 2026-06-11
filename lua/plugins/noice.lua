@@ -11,12 +11,9 @@ return {
     require("notify").setup({
       stages = "fade_in_slide_out",
       timeout = 3000,
-<<<<<<< HEAD
       top_down = true,
       
-=======
       top_down = false,
->>>>>>> 2bbd77c7176297dacb6016f2d75072bd382c8f09
     })
 
     vim.notify = require("notify")

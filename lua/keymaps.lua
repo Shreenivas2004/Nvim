@@ -18,17 +18,13 @@ vim.keymap.set("n", "<leader>t",function ()
   vim.cmd.term()
   vim.cmd.wincmd("J")
   vim.api.nvim_win_set_height(0,10)
-<<<<<<< HEAD
  
 end)
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 vim.keymap.set("n", "<C-a>", ":%y<cr>")
-=======
   
-end)
 vim.keymap.set('t', '<Esc>', [[<C-\><C-n>]], { desc = "Exit terminal mode" })
 
->>>>>>> 2bbd77c7176297dacb6016f2d75072bd382c8f09
 --require keymaps:w
 local builtin = require("telescope.builtin")
 vim.keymap.set("n", "<leader>ff", builtin.find_files, { desc = "Telescope find files" })

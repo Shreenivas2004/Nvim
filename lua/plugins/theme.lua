@@ -1,5 +1,4 @@
 return {
-<<<<<<< HEAD
   {
     "catppuccin/nvim", 
     name = "catppuccin", 
@@ -8,8 +7,8 @@ return {
       require("catppuccin").setup({
     flavour = "auto", -- latte, frappe, macchiato, mocha
     background = { -- :h background
-        light = "latte",
-        dark = "macchiato",
+        light = "frappe",
+        dark = "frappe",
     },
     transparent_background = false, -- disables setting the background color.
     float = {
@@ -83,14 +82,4 @@ vim.cmd.colorscheme "catppuccin-nvim"
       vim.cmd.colorscheme "catppuccin"
     end
   }
-=======
-    "tiagovla/tokyodark.nvim",
-    opts = {
-        -- custom options here
-    },
-    config = function(_, opts)
-        require("tokyodark").setup(opts) -- calling setup is optional
-        vim.cmd [[colorscheme tokyodark]]
-    end,
->>>>>>> 2bbd77c7176297dacb6016f2d75072bd382c8f09
 }

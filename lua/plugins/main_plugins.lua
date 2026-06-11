@@ -1,19 +1,15 @@
 return {
   -- 7. Github Copilot
   { "github/copilot.vim" },
-<<<<<<< HEAD
   
   -- 8. LSP, Mason, CMP & LuaSnip
-=======
   -- 8. LSP, Mason, CMP & LuaSnip (VS Code jaisa Autocomplete aur suggestions)
->>>>>>> 2bbd77c7176297dacb6016f2d75072bd382c8f09
   {
     "williamboman/mason.nvim",
     config = function()
       require("mason").setup()
     end,
   },
-<<<<<<< HEAD
   {
     "williamboman/mason-lspconfig.nvim",
     config = function()
@@ -37,10 +33,8 @@ return {
       vim.lsp.enable('html')
     end,
   },
-=======
   { "williamboman/mason-lspconfig.nvim" },
   { "neovim/nvim-lspconfig" },
->>>>>>> 2bbd77c7176297dacb6016f2d75072bd382c8f09
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -57,11 +51,8 @@ return {
           end,
         },
         mapping = cmp.mapping.preset.insert({
-<<<<<<< HEAD
           ["<Tab>"] = cmp.mapping.confirm({ select = true }),
-=======
           ["<Tab>"] = cmp.mapping.confirm({ select = true }), -- Tab dabane pe autocomplete hoga
->>>>>>> 2bbd77c7176297dacb6016f2d75072bd382c8f09
         }),
         sources = { { name = "nvim_lsp" }, { name = "luasnip" } },
       })

@@ -24,7 +24,6 @@ cmp.setup.filetype({ "sql", "mysql", "plsql" }, {
 })
 require("rust") 
 vim.opt.spell = true
-<<<<<<< HEAD
 vim.diagnostic.config({
   virtual_text = {
     severity = { min = vim.diagnostic.severity.ERROR }, -- Sirf Errors dikhao
@@ -34,5 +33,3 @@ vim.diagnostic.config({
   },
   signs = true,
 })
-=======
->>>>>>> 2bbd77c7176297dacb6016f2d75072bd382c8f09
